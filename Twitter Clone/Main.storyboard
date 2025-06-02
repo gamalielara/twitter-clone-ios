@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DtK-Vj-ORy">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="IHq-jb-lQj">
+            <objects>
+                <viewController id="DtK-Vj-ORy" customClass="WelcomeViewController" customModule="Twitter_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jb6-KK-Ere">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteTwitterLogo" translatesAutoresizingMaskIntoConstraints="NO" id="mra-Am-MjQ">
+                                <rect key="frame" x="0.0" y="174" width="226" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="i3a-mf-KD3"/>
+                                    <constraint firstAttribute="height" constant="50" id="ydZ-9J-qje"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join Twitter Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUI-5E-Zql">
+                                <rect key="frame" x="0.0" y="424" width="206" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XTF-ZV-ubd">
+                                <rect key="frame" x="0.0" y="504" width="206" height="50"/>
+                                <color key="backgroundColor" name="PrimaryBlue"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fyN-aW-ip9"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m7z-yu-mCl">
+                                <rect key="frame" x="0.0" y="574" width="206" height="50"/>
+                                <color key="backgroundColor" name="PrimaryBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Nca-ap-EW7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="m7L-s1-hBH"/>
+                        <color key="backgroundColor" name="PrimaryBlue"/>
+                        <constraints>
+                            <constraint firstItem="m7L-s1-hBH" firstAttribute="trailing" secondItem="mra-Am-MjQ" secondAttribute="trailing" id="51Q-Uf-Nda"/>
+                            <constraint firstItem="m7z-yu-mCl" firstAttribute="top" secondItem="XTF-ZV-ubd" secondAttribute="bottom" constant="20" id="9vi-2d-1Py"/>
+                            <constraint firstItem="m7z-yu-mCl" firstAttribute="leading" secondItem="m7L-s1-hBH" secondAttribute="leading" id="GZB-b2-OhT"/>
+                            <constraint firstItem="KUI-5E-Zql" firstAttribute="top" secondItem="mra-Am-MjQ" secondAttribute="bottom" constant="200" id="J86-Xo-aas"/>
+                            <constraint firstItem="KUI-5E-Zql" firstAttribute="leading" secondItem="m7L-s1-hBH" secondAttribute="leading" id="JqW-1x-3NC"/>
+                            <constraint firstItem="XTF-ZV-ubd" firstAttribute="leading" secondItem="m7L-s1-hBH" secondAttribute="leading" id="WvM-xk-ukn"/>
+                            <constraint firstItem="mra-Am-MjQ" firstAttribute="top" secondItem="m7L-s1-hBH" secondAttribute="top" constant="50" id="X5r-En-acz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m7z-yu-mCl" secondAttribute="trailing" id="bVO-6T-DMB"/>
+                            <constraint firstItem="XTF-ZV-ubd" firstAttribute="top" secondItem="KUI-5E-Zql" secondAttribute="bottom" constant="50" id="cXg-JI-GiQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XTF-ZV-ubd" secondAttribute="trailing" id="dNC-pn-j6x"/>
+                            <constraint firstItem="mra-Am-MjQ" firstAttribute="leading" secondItem="m7L-s1-hBH" secondAttribute="leading" id="eLd-jk-NPw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KUI-5E-Zql" secondAttribute="trailing" id="vcu-MQ-e70"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4HX-td-5Fr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1140" y="-3"/>
+        </scene>
+        <!--Dashboard View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DashboardViewController" customModule="Twitter_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QHC-R6-X6g">
+                                <rect key="frame" x="0.0" y="124" width="440" height="46"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seJ-dq-wv6">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="46"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Account"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ee1-05-Uba">
+                                        <rect key="frame" x="196.66666666666666" y="5" width="51" height="36"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Twitter Logo"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfz-DT-cmS">
+                                        <rect key="frame" x="393" y="5" width="47" height="36"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="FeaturedIcon"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IT4-Vy-xb7">
+                                <rect key="frame" x="0.0" y="167" width="440" height="671"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pti-EH-2FF">
+                                <rect key="frame" x="380" y="778" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="DSc-Qu-tZa"/>
+                                    <constraint firstAttribute="height" constant="50" id="dKU-9i-E2U"/>
+                                </constraints>
+                                <color key="tintColor" name="PrimaryBlue"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="AddTextIcon" cornerStyle="capsule"/>
+                            </button>
+                            <tabBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZj-vN-ZaJ">
+                                <rect key="frame" x="0.0" y="838" width="440" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="M4I-Ok-XJ2"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem title="" image="HomeStrokeIcon" selectedImage="HomeSolidIcon" id="1wD-tH-6oe"/>
+                                    <tabBarItem title="" image="Search StrokeIcon" selectedImage="SearchSolidIcon" id="GcC-Um-rsw"/>
+                                    <tabBarItem title="" image="BellStrokeIcon" selectedImage="BellSolidIcon" id="Z8U-fW-VXa"/>
+                                    <tabBarItem title="" image="MailStrokeIcon" selectedImage="MessageSolidIcon" id="bPG-rk-kup"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gZj-vN-ZaJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2CT-Ku-HOD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pti-EH-2FF" secondAttribute="trailing" constant="10" id="9lJ-Zb-EYr"/>
+                            <constraint firstItem="IT4-Vy-xb7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Iod-iD-8Kl"/>
+                            <constraint firstItem="IT4-Vy-xb7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QLD-xe-NwC"/>
+                            <constraint firstItem="gZj-vN-ZaJ" firstAttribute="top" secondItem="Pti-EH-2FF" secondAttribute="bottom" constant="10" id="ToN-vD-tyN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gZj-vN-ZaJ" secondAttribute="bottom" id="Zbi-vz-zre"/>
+                            <constraint firstItem="IT4-Vy-xb7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="aim-fF-9D6"/>
+                            <constraint firstItem="gZj-vN-ZaJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cAQ-eC-dhr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QHC-R6-X6g" secondAttribute="trailing" id="g2v-dO-gqH"/>
+                            <constraint firstItem="gZj-vN-ZaJ" firstAttribute="top" secondItem="IT4-Vy-xb7" secondAttribute="bottom" id="ri1-jh-Q5V"/>
+                            <constraint firstItem="QHC-R6-X6g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="v2l-CV-G9G"/>
+                            <constraint firstItem="QHC-R6-X6g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vtT-xy-dw9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addTweetButton" destination="Pti-EH-2FF" id="8fR-Sx-C76"/>
+                        <outlet property="dashboardTable" destination="IT4-Vy-xb7" id="jdA-rk-gug"/>
+                        <outlet property="homeTabBarItem" destination="1wD-tH-6oe" id="ARS-td-9xg"/>
+                        <outlet property="tabBar" destination="gZj-vN-ZaJ" id="KZe-1l-FpO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Account" width="32" height="32"/>
+        <image name="AddTextIcon" width="24" height="22"/>
+        <image name="BellSolidIcon" width="20" height="20"/>
+        <image name="BellStrokeIcon" width="20" height="20"/>
+        <image name="FeaturedIcon" width="23" height="22"/>
+        <image name="HomeSolidIcon" width="23" height="21"/>
+        <image name="HomeStrokeIcon" width="23" height="21"/>
+        <image name="MailStrokeIcon" width="20" height="18"/>
+        <image name="MessageSolidIcon" width="20" height="18"/>
+        <image name="Search StrokeIcon" width="20" height="20"/>
+        <image name="SearchSolidIcon" width="21" height="21"/>
+        <image name="Twitter Logo" width="27" height="22"/>
+        <image name="WhiteTwitterLogo" width="167" height="136"/>
+        <namedColor name="PrimaryBlue">
+            <color red="0.29803921568627451" green="0.61960784313725492" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

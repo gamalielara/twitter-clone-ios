@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReusableTweetCell" rowHeight="80" id="KGk-i7-Jjw" customClass="TweetCell" customModule="Twitter_Clone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="372" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UiD-zj-gqF">
+                        <rect key="frame" x="10" y="10" width="212" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ts" translatesAutoresizingMaskIntoConstraints="NO" id="O8l-ys-lFz">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.55798965690000002" green="0.16166710849999999" blue="0.14506730440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="oo1-MF-QFZ"/>
+                                    <constraint firstAttribute="height" constant="50" id="poL-nU-g3e"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="j5C-Vp-BIt">
+                                <rect key="frame" x="60" y="0.0" width="152" height="80"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kIP-Py-6IP">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="14.333333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Display Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfN-su-uhe">
+                                                <rect key="frame" x="0.0" y="0.0" width="82.666666666666671" height="14.333333333333334"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="@username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiC-He-sDJ">
+                                                <rect key="frame" x="92.666666666666657" y="0.0" width="49.333333333333343" height="14.333333333333334"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="11/11/2025" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGY-g1-WY8">
+                                                <rect key="frame" x="152" y="0.0" width="0.0" height="14.333333333333334"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ag5-wm-Joz">
+                                        <rect key="frame" x="-152" y="492" width="304" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="left" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="pCU-jx-dcc">
+                                        <rect key="frame" x="0.0" y="60" width="88" height="20"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WC4-pB-0rl">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="YWo-9C-5DU"/>
+                                                    <constraint firstAttribute="width" constant="20" id="t7V-IO-Agb"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="CommentIcon">
+                                                    <color key="baseForegroundColor" red="0.55798965690000002" green="0.16166710849999999" blue="0.14506730440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipX-nU-OYY">
+                                                <rect key="frame" x="34" y="0.0" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="HDv-hG-bZY"/>
+                                                    <constraint firstAttribute="height" constant="20" id="hSZ-qd-W90"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="HeartStrokeIcon">
+                                                    <color key="baseForegroundColor" red="0.55798965690000002" green="0.16166710849999999" blue="0.14506730440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIh-Sx-lgP">
+                                                <rect key="frame" x="68" y="0.0" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="Esc-cO-8YV"/>
+                                                    <constraint firstAttribute="height" constant="20" id="Z2b-dN-VFB"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="RetweetStrokeIcon"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                        <constraints>
+                            <constraint firstItem="j5C-Vp-BIt" firstAttribute="top" secondItem="UiD-zj-gqF" secondAttribute="top" id="4Qh-Gp-4Tw"/>
+                            <constraint firstItem="j5C-Vp-BIt" firstAttribute="leading" secondItem="O8l-ys-lFz" secondAttribute="trailing" constant="10" id="7x8-Cy-Rcc"/>
+                            <constraint firstAttribute="height" constant="80" id="CAk-qd-1gh"/>
+                            <constraint firstAttribute="bottom" secondItem="j5C-Vp-BIt" secondAttribute="bottom" id="Dk1-lk-hu0"/>
+                            <constraint firstAttribute="trailing" secondItem="j5C-Vp-BIt" secondAttribute="trailing" id="goV-PB-b2C"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="UiD-zj-gqF" secondAttribute="bottom" constant="10" id="C8T-gR-Ugb"/>
+                    <constraint firstItem="UiD-zj-gqF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="KmV-FB-rak"/>
+                    <constraint firstItem="UiD-zj-gqF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="eD0-GO-SYy"/>
+                    <constraint firstAttribute="trailing" secondItem="UiD-zj-gqF" secondAttribute="trailing" constant="10" id="hEw-zL-Vrp"/>
+                    <constraint firstItem="UiD-zj-gqF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="qew-vn-OSz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="actionButtonStack" destination="pCU-jx-dcc" id="UMb-Bv-LOe"/>
+                <outlet property="dateLabel" destination="CGY-g1-WY8" id="5pm-qU-Sfg"/>
+                <outlet property="displayNameText" destination="XfN-su-uhe" id="PMP-Yt-c3d"/>
+                <outlet property="profilePicture" destination="O8l-ys-lFz" id="Tpt-QV-UWU"/>
+                <outlet property="tweetBodyText" destination="ag5-wm-Joz" id="nhf-b8-JhB"/>
+                <outlet property="usernameText" destination="kiC-He-sDJ" id="Dqt-3b-cBe"/>
+            </connections>
+            <point key="canvasLocation" x="83.969465648854964" y="26.408450704225352"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CommentIcon" width="15" height="15"/>
+        <image name="HeartStrokeIcon" width="15" height="14"/>
+        <image name="RetweetStrokeIcon" width="18" height="13"/>
+        <image name="ts" width="1000" height="1000"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
