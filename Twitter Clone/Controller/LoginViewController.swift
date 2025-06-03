@@ -1,25 +1,31 @@
 //
-//  WelcomeViewController.swift
+//  LoginViewController.swift
 //  Twitter Clone
 //
-//  Created by Ara Gamaliel on 6/2/25.
+//  Created by Ara Gamaliel on 6/3/25.
 //
 
 import UIKit
 
-class WelcomeViewController: BaseUIViewController {
+class LoginViewController: BaseUIViewController {
     @IBOutlet weak var emailTextField: PaddedTextField!
     
     @IBOutlet weak var passwordTextField: PaddedTextField!
     
-    @IBOutlet weak var usernameTextfield: PaddedTextField!
+    @IBOutlet weak var loginButton: UIButton!
     
-    @IBOutlet weak var registerButton: UIButton!
+    
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func goToRegisterButtonPressed(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        registerButton.layer.cornerRadius = registerButton.frame.height / 2
+        loginButton.layer.cornerRadius = loginButton.frame.height / 2
         
         emailTextField.layer.borderWidth = 1.5
         emailTextField.layer.cornerRadius = 20
@@ -27,14 +33,6 @@ class WelcomeViewController: BaseUIViewController {
         emailTextField.attributedPlaceholder = NSAttributedString(string: "Enter your Email", attributes: [
             .foregroundColor: UIColor.white
         ])
-        
-        usernameTextfield.layer.borderWidth = 1.5
-        usernameTextfield.layer.cornerRadius = 20
-        usernameTextfield.layer.borderColor = UIColor.white.cgColor
-        usernameTextfield.attributedPlaceholder = NSAttributedString(string: "Enter your Username", attributes: [
-            .foregroundColor: UIColor.white
-        ])
-
         
         passwordTextField.layer.borderWidth = 1.5
         passwordTextField.layer.cornerRadius = 20

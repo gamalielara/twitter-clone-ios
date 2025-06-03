@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0wf-ny-Rjw">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="IHq-jb-lQj">
+            <objects>
+                <viewController id="DtK-Vj-ORy" customClass="WelcomeViewController" customModule="Twitter_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jb6-KK-Ere">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteTwitterLogo" translatesAutoresizingMaskIntoConstraints="NO" id="mra-Am-MjQ">
+                                <rect key="frame" x="0.0" y="218" width="226" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="i3a-mf-KD3"/>
+                                    <constraint firstAttribute="height" constant="50" id="ydZ-9J-qje"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join Twitter Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUI-5E-Zql">
+                                <rect key="frame" x="0.0" y="468" width="206" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gHM-0e-U9h">
+                                <rect key="frame" x="-124" y="548" width="300" height="331.33333333333326"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Enter your email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XTF-ZV-ubd" customClass="PaddedTextField" customModule="Twitter_Clone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                        <color key="backgroundColor" name="PrimaryBlue"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="fyN-aW-ip9"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i1T-Hz-79R" customClass="PaddedTextField" customModule="Twitter_Clone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="70" width="300" height="50"/>
+                                        <color key="backgroundColor" name="PrimaryBlue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="cAS-Ii-5JM"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m7z-yu-mCl" customClass="PaddedTextField" customModule="Twitter_Clone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="140" width="300" height="50"/>
+                                        <color key="backgroundColor" name="PrimaryBlue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Nca-ap-EW7"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ep-ta-95o">
+                                        <rect key="frame" x="0.0" y="216" width="300" height="38"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Register Now" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="baseForegroundColor" name="PrimaryBlue"/>
+                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="uhp-9X-gbB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skF-cA-39h">
+                                        <rect key="frame" x="0.0" y="279" width="300" height="52.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Already have an account? Sign in here.">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="2Vy-hb-nWC" kind="show" id="VI2-wg-eUl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="eOX-yt-Xov"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="m7L-s1-hBH"/>
+                        <color key="backgroundColor" name="PrimaryBlue"/>
+                        <constraints>
+                            <constraint firstItem="m7L-s1-hBH" firstAttribute="trailing" secondItem="mra-Am-MjQ" secondAttribute="trailing" id="51Q-Uf-Nda"/>
+                            <constraint firstItem="KUI-5E-Zql" firstAttribute="top" secondItem="mra-Am-MjQ" secondAttribute="bottom" constant="200" id="J86-Xo-aas"/>
+                            <constraint firstItem="KUI-5E-Zql" firstAttribute="leading" secondItem="m7L-s1-hBH" secondAttribute="leading" id="JqW-1x-3NC"/>
+                            <constraint firstItem="gHM-0e-U9h" firstAttribute="top" secondItem="KUI-5E-Zql" secondAttribute="bottom" constant="50" id="L5t-3o-ibk"/>
+                            <constraint firstItem="mra-Am-MjQ" firstAttribute="top" secondItem="m7L-s1-hBH" secondAttribute="top" constant="50" id="X5r-En-acz"/>
+                            <constraint firstItem="m7L-s1-hBH" firstAttribute="trailing" secondItem="gHM-0e-U9h" secondAttribute="trailing" constant="50" id="boK-rx-qZm"/>
+                            <constraint firstItem="mra-Am-MjQ" firstAttribute="leading" secondItem="m7L-s1-hBH" secondAttribute="leading" id="eLd-jk-NPw"/>
+                            <constraint firstItem="gHM-0e-U9h" firstAttribute="leading" secondItem="Jb6-KK-Ere" secondAttribute="leading" constant="50" id="fnf-cA-Hl1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KUI-5E-Zql" secondAttribute="trailing" id="vcu-MQ-e70"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="c0R-t8-aIm"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="XTF-ZV-ubd" id="vCf-H6-koE"/>
+                        <outlet property="passwordTextField" destination="m7z-yu-mCl" id="6nb-4c-kMf"/>
+                        <outlet property="registerButton" destination="6Ep-ta-95o" id="zwq-KB-4R3"/>
+                        <outlet property="usernameTextfield" destination="i1T-Hz-79R" id="SZE-eV-MBr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4HX-td-5Fr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-247" y="-3"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="bKf-mh-B8a">
+            <objects>
+                <viewController id="2Vy-hb-nWC" customClass="LoginViewController" customModule="Twitter_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xUS-vM-Kwl">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="F3n-8l-wW6">
+                                <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteTwitterLogo" translatesAutoresizingMaskIntoConstraints="NO" id="pKj-7n-aJP">
+                                        <rect key="frame" x="0.0" y="218" width="183.33333333333334" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Nuf-kR-w64"/>
+                                            <constraint firstAttribute="width" constant="50" id="cL3-5N-glZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login to Twitter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fg-58-WvZ">
+                                        <rect key="frame" x="0.0" y="468" width="175.33333333333334" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cWg-7s-6w4">
+                                        <rect key="frame" x="-166.66666666666666" y="548" width="300" height="251.66666666666663"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Enter your email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kqg-Nj-SFZ" customClass="PaddedTextField" customModule="Twitter_Clone" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                                <color key="backgroundColor" name="PrimaryBlue"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="WR1-tH-QkQ"/>
+                                                </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IV0-Xo-86D" customClass="PaddedTextField" customModule="Twitter_Clone" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="70" width="300" height="50"/>
+                                                <color key="backgroundColor" name="PrimaryBlue"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="jS4-mc-EFG"/>
+                                                </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9do-bu-3Co">
+                                                <rect key="frame" x="0.0" y="146" width="300" height="38"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Login" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="baseForegroundColor" name="PrimaryBlue"/>
+                                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="loginButtonPressed:" destination="2Vy-hb-nWC" eventType="touchUpInside" id="nhs-3c-OfX"/>
+                                                    <segue destination="BYZ-38-t0r" kind="show" id="b1c-Qt-yxK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UjB-hh-a5l">
+                                                <rect key="frame" x="0.0" y="218.33333333333337" width="300" height="33.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Don't have an account? Register now.">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="goToRegisterButtonPressed:" destination="2Vy-hb-nWC" eventType="touchUpInside" id="09G-0Y-sww"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="nSS-TL-KAl"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="vgi-o6-wb1"/>
+                                <color key="backgroundColor" name="PrimaryBlue"/>
+                                <constraints>
+                                    <constraint firstItem="vgi-o6-wb1" firstAttribute="trailing" secondItem="cWg-7s-6w4" secondAttribute="trailing" constant="50" id="8sa-oU-7Rp"/>
+                                    <constraint firstItem="cWg-7s-6w4" firstAttribute="leading" secondItem="F3n-8l-wW6" secondAttribute="leading" constant="50" id="Ast-Bg-sYu"/>
+                                    <constraint firstItem="5Fg-58-WvZ" firstAttribute="leading" secondItem="vgi-o6-wb1" secondAttribute="leading" id="FDX-jh-Xsc"/>
+                                    <constraint firstItem="vgi-o6-wb1" firstAttribute="trailing" secondItem="pKj-7n-aJP" secondAttribute="trailing" id="HGf-vJ-Iy8"/>
+                                    <constraint firstItem="5Fg-58-WvZ" firstAttribute="top" secondItem="pKj-7n-aJP" secondAttribute="bottom" constant="200" id="Zr5-sX-rWK"/>
+                                    <constraint firstItem="pKj-7n-aJP" firstAttribute="top" secondItem="vgi-o6-wb1" secondAttribute="top" constant="50" id="aQn-Ku-eYk"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="5Fg-58-WvZ" secondAttribute="trailing" id="g6T-JA-ZzC"/>
+                                    <constraint firstItem="pKj-7n-aJP" firstAttribute="leading" secondItem="vgi-o6-wb1" secondAttribute="leading" id="jo0-B5-LIW"/>
+                                    <constraint firstItem="cWg-7s-6w4" firstAttribute="top" secondItem="5Fg-58-WvZ" secondAttribute="bottom" constant="50" id="pTT-Kx-OhV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KQm-Uy-p78"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3p3-Dc-rXI"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="Kqg-Nj-SFZ" id="jMG-Sx-3MR"/>
+                        <outlet property="loginButton" destination="9do-bu-3Co" id="GTs-4k-whe"/>
+                        <outlet property="passwordTextField" destination="IV0-Xo-86D" id="Of1-kq-7Az"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gbd-eI-Fyd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-248" y="729"/>
+        </scene>
+        <!--Dashboard View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DashboardViewController" customModule="Twitter_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QHC-R6-X6g">
+                                <rect key="frame" x="0.0" y="168" width="440" height="46"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seJ-dq-wv6">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="46"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Account"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ee1-05-Uba">
+                                        <rect key="frame" x="196.66666666666666" y="5" width="51" height="36"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Twitter Logo"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfz-DT-cmS">
+                                        <rect key="frame" x="393" y="5" width="47" height="36"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="FeaturedIcon"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IT4-Vy-xb7">
+                                <rect key="frame" x="0.0" y="211" width="440" height="627"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pti-EH-2FF">
+                                <rect key="frame" x="380" y="778" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="DSc-Qu-tZa"/>
+                                    <constraint firstAttribute="height" constant="50" id="dKU-9i-E2U"/>
+                                </constraints>
+                                <color key="tintColor" name="PrimaryBlue"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="AddTextIcon" cornerStyle="capsule">
+                                    <color key="baseForegroundColor" name="PrimaryBlue"/>
+                                    <color key="baseBackgroundColor" name="PrimaryBlue"/>
+                                </buttonConfiguration>
+                            </button>
+                            <tabBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZj-vN-ZaJ">
+                                <rect key="frame" x="0.0" y="838" width="440" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="M4I-Ok-XJ2"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem title="" image="HomeStrokeIcon" selectedImage="HomeSolidIcon" id="1wD-tH-6oe"/>
+                                    <tabBarItem title="" image="Search StrokeIcon" selectedImage="SearchSolidIcon" id="GcC-Um-rsw"/>
+                                    <tabBarItem title="" image="BellStrokeIcon" selectedImage="BellSolidIcon" id="Z8U-fW-VXa"/>
+                                    <tabBarItem title="" image="MailStrokeIcon" selectedImage="MessageSolidIcon" id="bPG-rk-kup"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gZj-vN-ZaJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2CT-Ku-HOD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pti-EH-2FF" secondAttribute="trailing" constant="10" id="9lJ-Zb-EYr"/>
+                            <constraint firstItem="IT4-Vy-xb7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Iod-iD-8Kl"/>
+                            <constraint firstItem="IT4-Vy-xb7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QLD-xe-NwC"/>
+                            <constraint firstItem="gZj-vN-ZaJ" firstAttribute="top" secondItem="Pti-EH-2FF" secondAttribute="bottom" constant="10" id="ToN-vD-tyN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gZj-vN-ZaJ" secondAttribute="bottom" id="Zbi-vz-zre"/>
+                            <constraint firstItem="IT4-Vy-xb7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="aim-fF-9D6"/>
+                            <constraint firstItem="gZj-vN-ZaJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cAQ-eC-dhr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QHC-R6-X6g" secondAttribute="trailing" id="g2v-dO-gqH"/>
+                            <constraint firstItem="gZj-vN-ZaJ" firstAttribute="top" secondItem="IT4-Vy-xb7" secondAttribute="bottom" id="ri1-jh-Q5V"/>
+                            <constraint firstItem="QHC-R6-X6g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="v2l-CV-G9G"/>
+                            <constraint firstItem="QHC-R6-X6g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vtT-xy-dw9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="a1j-Qa-DIN"/>
+                    <connections>
+                        <outlet property="addTweetButton" destination="Pti-EH-2FF" id="8fR-Sx-C76"/>
+                        <outlet property="dashboardTable" destination="IT4-Vy-xb7" id="jdA-rk-gug"/>
+                        <outlet property="homeTabBarItem" destination="1wD-tH-6oe" id="ARS-td-9xg"/>
+                        <outlet property="tabBar" destination="gZj-vN-ZaJ" id="KZe-1l-FpO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912" y="417"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="azg-DL-FDi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0wf-ny-Rjw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cvb-a1-cVw">
+                        <rect key="frame" x="0.0" y="124" width="440" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DtK-Vj-ORy" kind="relationship" relationship="rootViewController" id="6PA-lM-jpw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MnK-ID-h97" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1459" y="-3"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="b1c-Qt-yxK"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Account" width="32" height="32"/>
+        <image name="AddTextIcon" width="24" height="22"/>
+        <image name="BellSolidIcon" width="20" height="20"/>
+        <image name="BellStrokeIcon" width="20" height="20"/>
+        <image name="FeaturedIcon" width="23" height="22"/>
+        <image name="HomeSolidIcon" width="23" height="21"/>
+        <image name="HomeStrokeIcon" width="23" height="21"/>
+        <image name="MailStrokeIcon" width="20" height="18"/>
+        <image name="MessageSolidIcon" width="20" height="18"/>
+        <image name="Search StrokeIcon" width="20" height="20"/>
+        <image name="SearchSolidIcon" width="21" height="21"/>
+        <image name="Twitter Logo" width="27" height="22"/>
+        <image name="WhiteTwitterLogo" width="167" height="136"/>
+        <namedColor name="PrimaryBlue">
+            <color red="0.29803921568627451" green="0.61960784313725492" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

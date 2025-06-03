@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DashboardViewController: UIViewController {
+class DashboardViewController: BaseUIViewController {
     @IBOutlet weak var dashboardTable: UITableView!
     
     @IBOutlet weak var tabBar: UITabBar!
