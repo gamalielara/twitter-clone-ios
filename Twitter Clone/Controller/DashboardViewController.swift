@@ -45,12 +45,10 @@ class DashboardViewController: BaseUIViewController {
 
 extension DashboardViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("HAOO!!!")
         return tweets.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("HELLO!!")
         let tweet = tweets[indexPath.row]
         
         let tweetCell = tableView.dequeueReusableCell(withIdentifier: "ReusableTweetCell", for: indexPath) as! TweetCell
@@ -67,6 +65,5 @@ extension DashboardViewController: UITableViewDataSource {
 
 extension DashboardViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
     }
 }
